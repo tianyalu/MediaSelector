@@ -47,8 +47,8 @@ public class PictureImageGridAdapter extends RecyclerView.Adapter<RecyclerView.V
     private boolean showCamera = true;
     private OnPhotoSelectChangedListener imageSelectChangedListener;
     private int maxSelectNum;
-    private List<LocalMedia> images = new ArrayList<LocalMedia>();
-    private List<LocalMedia> selectImages = new ArrayList<LocalMedia>();
+    private List<LocalMedia> images = new ArrayList<LocalMedia>();  //单个目录下的所有图片
+    private List<LocalMedia> selectImages = new ArrayList<LocalMedia>(); //所有选择的图片
     private boolean enablePreview;
     private int selectMode = PictureConfig.MULTIPLE;
     private boolean enablePreviewVideo = false;

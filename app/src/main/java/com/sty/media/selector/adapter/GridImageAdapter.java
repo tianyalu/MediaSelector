@@ -191,7 +191,7 @@ public class GridImageAdapter extends RecyclerView.Adapter<GridImageAdapter.View
 
     private boolean isShowAddItem(int position){
         int size = selectedList.size() == 0 ? 0 : selectedList.size();
-        return position == size;
+        return position == size;  //position下标从0开始
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
